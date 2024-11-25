@@ -1,0 +1,7 @@
+version: "3"
+services:
+  display:
+    image: dogugonggan/exhibition-default:DPImageShow
+    restart: always # PC가 부팅될때 항상 실행할건지?
+    ports: # 80번 포트를 3000번 포트로 열기 (nginx 기본 포트는 80번입니다)
+      - "3000:80"
