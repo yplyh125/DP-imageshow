@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json /
 
 # 의존성을 설치 (frozen-lockfile로 버전을 고정하고, 네트워크 타임아웃 설정)
-RUN npm run i
+RUN npm i
 
 # 프로젝트의 모든 파일을 컨테이너로 복사
 COPY . .
